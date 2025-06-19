@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>海报展示</title>
+  <title>海报与表格展示</title>
   <style>
     body {
       font-family: sans-serif;
@@ -15,34 +15,43 @@
       justify-content: space-around;
       gap: 20px;
     }
-    .gallery img,
-    .gallery object {
+    .gallery img {
       width: 30%;
       height: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .table-container {
+      margin-top: 40px;
+    }
+    .table-container h2 {
+      margin-bottom: 10px;
+    }
+    .table-container object {
+      width: 100%;
+      height: 600px;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
   </style>
 </head>
 <body>
-  <h1>海报图片展示</h1>
+  <h1>海报</h1>
   <div class="gallery">
-    <!-- JPEG 图片 -->
     <img src="航海版海报定.jpg" alt="航海版海报" />
-    <!-- PDF 嵌入为可查看对象 -->
-    <object data="侠客风海报定.pdf" type="application/pdf">
-      <p>浏览器不支持查看 PDF，请 <a href="侠客风海报定.pdf">下载查看</a>.</p>
-    </object>
-    <object data="举牌版海报定.pdf" type="application/pdf">
-      <p>浏览器不支持查看 PDF，请 <a href="举牌版海报定.pdf">下载查看</a>.</p>
-    </object>
-    <!-- 新增两份 PDF -->
-    <object data="海报1.pdf" type="application/pdf">
-      <p>浏览器不支持查看 PDF，请 <a href="海报1.pdf">下载查看</a>.</p>
-    </object>
-    <object data="海报2.pdf" type="application/pdf">
-      <p>浏览器不支持查看 PDF，请 <a href="海报2.pdf">下载查看</a>.</p>
+    <img src="侠客风海报定.jpg" alt="侠客风海报" />
+    <img src="举牌版海报定.jpg" alt="举牌版海报" />
+    <img src="海报1.jpg" alt="海报1" />
+    <img src="海报2.jpg" alt="海报2" />
+  </div>
+
+  <div class="table-container">
+    <h2>PDF 表格展示</h2>
+    <!-- 请将表格 PDF 文件命名为 table.pdf 并放入此目录 -->
+    <object data="表1.pdf" type="application/pdf">
+      <p>浏览器不支持内嵌 PDF，请 <a href="表1.pdf">下载查看表格</a>.</p>
     </object>
   </div>
 </body>
 </html>
+
