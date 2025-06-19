@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>海报展示</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .gallery img,
+    .gallery object {
+      width: 30%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>海报图片展示</h1>
+  <div class="gallery">
+    <!-- JPEG 图片 -->
+    <img src="航海版海报定.jpg" alt="航海版海报" />
+    <!-- PDF 嵌入为可查看对象 -->
+    <object data="侠客风海报定.pdf" type="application/pdf">
+      <p>浏览器不支持查看 PDF，请 <a href="侠客风海报定.pdf">下载查看</a>.</p>
+    </object>
+    <object data="举牌版海报定.pdf" type="application/pdf">
+      <p>浏览器不支持查看 PDF，请 <a href="举牌版海报定.pdf">下载查看</a>.</p>
+    </object>
+    <!-- 新增两份 PDF -->
+    <object data="海报1.pdf" type="application/pdf">
+      <p>浏览器不支持查看 PDF，请 <a href="海报1.pdf">下载查看</a>.</p>
+    </object>
+    <object data="海报2.pdf" type="application/pdf">
+      <p>浏览器不支持查看 PDF，请 <a href="海报2.pdf">下载查看</a>.</p>
+    </object>
+  </div>
+</body>
+</html>
